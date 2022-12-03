@@ -9,7 +9,7 @@ let users;
 let customers;
 let consultations;
 let roles = ["user", "admin"];
-
+console.log("prout2");
 module.exports = {
     connectToServer: function (callback) { 
         MongoClient.connect(url, function(err, client) {
