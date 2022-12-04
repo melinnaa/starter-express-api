@@ -34,7 +34,6 @@ var connection = require('./connection.js');
 
 connection.connectToServer( function (err) {
     if (err) console.log(err);
-    console.log("prout");
     //ROUTES
     require('./routes/auth.routes.js')(app);
     require('./routes/user.routes')(app);

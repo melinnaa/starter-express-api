@@ -14,7 +14,6 @@ module.exports = function(app) {
   });
 
   var ObjectId = require('mongodb').ObjectId;
-  console.log("prout3");
   app.get("/user", [authJwt.verifyToken], controller.userBoard);
 
   app.get("/admin", [authJwt.verifyToken, authJwt.isAdmin], controller.adminBoard);
